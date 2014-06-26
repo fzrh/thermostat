@@ -17,4 +17,8 @@ describe('Thermostat', function() {
     expect(thermostat.minimumTemperature()).toEqual(10);
   })
 
+  it('maximum temperature is 25 degrees with power saving mode on', function(){
+    expect(thermostat.maximumTemperature()).toEqual(25);
+  })
+
 })
