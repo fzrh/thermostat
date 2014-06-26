@@ -13,4 +13,8 @@ describe('Thermostat', function() {
     expect(thermostat.powerSavingMode).toBe(true)
   })
 
+  it('minimum temperature is 10 degrees', function(){
+    expect(thermostat.minimumTemperature()).toEqual(10);
+  })
+
 })
