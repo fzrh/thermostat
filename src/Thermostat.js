@@ -26,3 +26,7 @@ Thermostat.prototype.cooler = function() {
   if(this.temperature > this.minimumTemperature()) {
     this.temperature -= 1; }
 };
+
+Thermostat.prototype.reset = function() {
+  this.temperature = 20;
+};
