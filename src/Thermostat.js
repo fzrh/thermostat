@@ -7,10 +7,6 @@ Thermostat.prototype.minimumTemperature = function() {
   return 10;
 };
 
-// Thermostat.prototype.maximumTemperature = function() {
-//   return 25;
-// }
-
 Thermostat.prototype.maximumTemperature = function() {
   if (this.powerSavingMode) {
   	return 25; } 
@@ -29,4 +25,8 @@ Thermostat.prototype.cooler = function() {
 
 Thermostat.prototype.reset = function() {
   this.temperature = 20;
+};
+
+Thermostat.prototype.energyUsage = function() {
+  if(this.temperature >= 25) return 'high';
 };

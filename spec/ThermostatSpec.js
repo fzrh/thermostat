@@ -42,4 +42,9 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(20);
   });
 
+  it('the energy usage is high when usage is >=25', function(){
+    thermostat.temperature = 26;
+    expect(thermostat.energyUsage()).toEqual('high')
+  });
+
 });
