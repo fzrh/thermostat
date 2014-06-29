@@ -19,6 +19,10 @@ Thermostat.prototype.maximumTemperature = function() {
 
 Thermostat.prototype.warmer = function() {
 	if (this.temperature < this.maximumTemperature()) {
-		this.temperature +=1;
-  }
+		this.temperature +=1; }
+};
+
+Thermostat.prototype.cooler = function() {
+  if(this.temperature > this.minimumTemperature()) {
+    this.temperature -= 1; }
 };

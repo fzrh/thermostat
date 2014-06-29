@@ -31,4 +31,9 @@ describe('Thermostat', function() {
     expect(thermostat.temperature).toEqual(21);
   });
 
+  it('temperature can be decreased if > 10', function(){
+    thermostat.cooler();
+    expect(thermostat.temperature).toEqual(19);
+    });
+
 });
